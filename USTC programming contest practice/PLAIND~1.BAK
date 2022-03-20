@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+ int main()
+{
+clrscr();
+    char*string;
+    int len,i,flag=0,j;
+    printf("enter a string:");
+    gets(string);
+    len=strlen(string);
+    for(i=0,j=len;i<j;i++,j--)
+    if(string[i]!=string[j]){
+    printf("not plaindrome");
+    flag=1;
+    break;
+    }
+    if(flag==0)
+    printf("plindrome");
+    return 0;
+}

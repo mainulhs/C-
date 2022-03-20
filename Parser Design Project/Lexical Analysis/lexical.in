@@ -1,0 +1,13 @@
+#include <cstdio>
+#include <iostream>
+int main()
+{
+	int a, b, c;
+	char d, e, f;
+	float m, n, o;
+	prntf("Enter the value of a, b: ");
+	scanf("%d%d");
+	c = (a+b);
+	printf("%d\n", c);
+	return 0;
+}

@@ -1,0 +1,32 @@
+Simplified Grammer: 1.
+
+E->TX
+X->+TX
+X->e
+T->FY
+Y->*FY
+Y->e
+F->(E)
+F->i
+
+Simplified Grammer: 2.
+
+E->TA
+A->+TA
+A->e
+T->FB
+B->e
+B->*FB
+F->(E)
+F->i
+
+Enter FIRST[E](i
+Enter FIRST[X]+e
+Enter FIRST[T](i
+Enter FIRST[Y]*e
+Enter FIRST[F](i
+Enter FOLLOW[E])$
+Enter FOLLOW[X])$
+Enter FOLLOW[T]+)$
+Enter FOLLOW[Y]+)$
+Enter FOLLOW[F]*+)$

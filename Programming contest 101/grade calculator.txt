@@ -1,0 +1,123 @@
+#include <iostream.h>
+#include <stdlib.h>
+
+int main()
+{
+	  char grade;
+	  char stopcheck;
+
+
+
+		   cout<<"Enter a valid grade or x to stop: ";
+		   cin>>grade;
+
+		 //Begin Outer Do Loop 1
+		 do
+		 {
+		   while (grade!='x')
+		   {//Begin While for grade check
+		   if (grade == 'a' || grade =='A')
+			  {
+			  cout<<"Your grade is: A"<<endl;
+			  break;
+			  }
+		   if (grade == 'b' || grade =='B')
+			  {
+			  cout<<"Your grade is: B"<<endl;
+			  break;
+			  }
+		   if (grade == 'c' || grade =='C')
+			  {
+			  cout<<"Your grade is: C"<<endl;
+			  break;
+			  }
+		   if (grade == 'd' || grade =='D')
+			  {
+			  cout<<"Your grade is: D"<<endl;
+			  break;
+			  }
+		   if (grade == 'F' || grade =='f')
+			  {
+			   cout <<"Bummer.\n";
+			   cout <<"Your grade is: F"<<endl;
+			   break;
+			   }
+		   else
+			   {
+			   cout<<"That is an invalid entry.\n";
+			   break;
+			   }
+
+		   }//End while for grade check
+
+
+		   //On break; statements from the while loop above should break to here.
+
+		   //If grade is x
+		   if (grade == 'x')
+		   {
+
+
+			  while (stopcheck !='y' || stopcheck !='Y' || stopcheck !='n' || stopcheck !='N')
+			  {//Begin While stopcheck
+
+				 cout<<"Are you sure you want to quit? (Y/N): ";
+				 cin>>stopcheck;
+
+				 if(stopcheck =='y' || stopcheck =='Y')
+				 {
+				 cout<<"Terminating Program";
+				 break;
+				 }
+
+				 else if(stopcheck =='n' || stopcheck =='N')
+				 {
+				 cout<<"Enter a valid grade: ";
+				 cin>>grade;
+				 break;
+				 }
+
+				 else
+				 {
+				 cout<<"Invalid Input.\n";
+				 }
+
+			   } //End While Stopcheck
+			}//End If grade is x
+
+		  //break; from While stopcheck"Enter a valid grade: " should break to here
+		  //It then should loop back to the beginning of do loop.
+		} while (grade !='x'); //End Outer Do Loop 1
+
+		//break; from While stopcheck "Terminating Program" should break to here
+		return 0;
+
+}
+
+
+
+
+
+#include<stdio.h>
+int main () {
+int sub1,sub2,sub3,sub4,sub5,total;
+float average;
+printf("ENTER THE NUMBERS IN 5 SUBJECTS OF THE STUDENT\n");
+scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5);
+   total=sub1+sub2+sub3+sub4+sub5;
+   average=total/5;
+   if(average>=80)
+     {printf("STUDENT HAS GOT A GRADE\n");}
+  else if(average>=70)
+     {printf("STUDENT HAS GOT B GRADE\n");}
+  else if(average >=60)
+     {printf("STUDENT HAS GOT C GRADE\n");}
+  else if(average>=50)
+     {printf("STUDENT HAS GOT D GRADE\n");}
+  else if(average>=40)
+     {printf("STUDENT HAS GOT E GRADE\n");}
+  else
+     {printf("STUDENT HAS FOT F GRADE\n");}  
+return 0;
+}
+

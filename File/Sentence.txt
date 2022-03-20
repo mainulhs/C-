@@ -1,0 +1,8 @@
+#include <cstdio>
+#include <iostream>
+#include <cstring>
+int a;
+cout << a+b;
+I eat rice
+Spot is dog.
+

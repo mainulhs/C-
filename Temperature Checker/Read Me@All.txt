@@ -1,0 +1,2 @@
+Title: Temperature Checker
+Description: A temperature Checker is a program that i create where any one type the temperature of a day than it show the programer FREEZING, VERY COLD, WARM,VERY HOT.IT depends on user command.I hope any oe ca easyly check the temperature.

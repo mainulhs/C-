@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int space,n,i,j;
+printf("Enter the value:");
+scanf("%d",&n);
+space=n-1;
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=space;j++)
+printf(" ");
+for(i=1;j<=i;j++){
+printf("%d",i);
+printf(" ");
+}
+printf("\n");
+space--;
+}
+return 0;
+}

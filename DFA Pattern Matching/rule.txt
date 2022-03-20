@@ -1,0 +1,5 @@
+Define transition rule as (initial state, input symbol ) = final state
+
+
+
+
